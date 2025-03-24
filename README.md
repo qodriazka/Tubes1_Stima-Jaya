@@ -40,6 +40,6 @@ Tekan tombol **“Start Battle”** untuk memulai permainan.
 
 | Nama            | NIM      |
 |-----------------|----------|
-| Adiel Rum       | 10123004 |
 | Muhammad Zakkiy | 10122074 |
+| Adiel Rum       | 10123004 |
 | Qodri Azkarayan | 13523010 |
