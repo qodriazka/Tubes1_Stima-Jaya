@@ -26,11 +26,11 @@ public class AgroRammer : Bot
         
         while (IsRunning)
         {
-            // Tell the game that when we take move, we'll also want to turn right... a lot
+            // Memberitahu game bahwa saat bot bergerak, bot juga akan berbelok ke kiri dalam jumlah besar
             SetTurnLeft(10_000);
-            // Limit our speed to 5
+            // Batasi kecepatan menjadi 5
             MaxSpeed = 5;
-            // Start moving (and turning)
+            // Mulau bergerak berputar-putar
             Forward(10_000);
         }
     }
