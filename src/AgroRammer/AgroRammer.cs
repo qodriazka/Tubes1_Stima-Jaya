@@ -33,6 +33,7 @@ public class AgroRammer : Bot
             // Mulau bergerak berputar-putar
             Forward(10_000);
         }
+        
     }
 
     public override void OnScannedBot(ScannedBotEvent e)
@@ -43,13 +44,24 @@ public class AgroRammer : Bot
             double bearingToEnemy = BearingTo(e.X, e.Y); // Hitung arah ke musuh
             SetTurnLeft(bearingToEnemy); // Putar ke arah musuh
             SetForward(100); // Maju untuk menabrak
-            Fire(Math.Min(3 - Math.Abs(bearingFromGun), Energy - .1));
+            SmartFire(DistanceTo(e.X, e.Y));
         }
         else
         {
             var bearingFromGun = GunBearingTo(e.X, e.Y);
             Fire(Math.Min(3 - Math.Abs(bearingFromGun), Energy - .1));
+            //SmartFire(DistanceTo(e.X, e.Y));
         }
+    }
+
+    private void SmartFire(double distance)
+    {
+        if (distance > 200 || Energy < 15)
+            Fire(1);
+        else if (distance > 50)
+            Fire(2);
+        else
+            Fire(3);
     }
 
 
