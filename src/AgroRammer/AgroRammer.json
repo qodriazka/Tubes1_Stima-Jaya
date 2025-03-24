@@ -1,0 +1,10 @@
+{
+  "name": "AgroRammer",
+  "version": "1.0",
+  "authors": ["Adiel", "Zakkiy", "Qodri"],
+  "description": "Bot yang mengincar bot lemah",
+  "homepage": "",
+  "countryCodes": ["id"],
+  "platform": ".Net 9.0",
+  "programmingLang": "C# 10.0"
+}

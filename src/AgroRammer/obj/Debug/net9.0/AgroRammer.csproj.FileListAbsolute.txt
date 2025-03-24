@@ -1,0 +1,6 @@
+C:\Stima\tubes1-if2211-starter-pack-1.0\Tubes1_Stima-Jaya\src\AgroRammer\obj\Debug\net9.0\AgroRammer.csproj.AssemblyReference.cache
+C:\Stima\tubes1-if2211-starter-pack-1.0\Tubes1_Stima-Jaya\src\AgroRammer\obj\Debug\net9.0\AgroRammer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Stima\tubes1-if2211-starter-pack-1.0\Tubes1_Stima-Jaya\src\AgroRammer\obj\Debug\net9.0\AgroRammer.AssemblyInfoInputs.cache
+C:\Stima\tubes1-if2211-starter-pack-1.0\Tubes1_Stima-Jaya\src\AgroRammer\obj\Debug\net9.0\AgroRammer.AssemblyInfo.cs
+C:\Stima\tubes1-if2211-starter-pack-1.0\Tubes1_Stima-Jaya\src\AgroRammer\obj\Debug\net9.0\AgroRammer.csproj.CoreCompileInputs.cache
+C:\Stima\tubes1-if2211-starter-pack-1.0\Tubes1_Stima-Jaya\src\AgroRammer\obj\Debug\net9.0\AgroRammer.sourcelink.json
