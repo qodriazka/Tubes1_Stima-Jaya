@@ -65,7 +65,7 @@ public class AgroRammer : Bot
     {
         // Putar 90 derajat dan bergerak menjauhi dinding
         SetTurnRight(90);
-        SetForward(150);
+        SetForward(120);
     }
 
     public override void OnHitBot(HitBotEvent e)
