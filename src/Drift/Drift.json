@@ -1,5 +1,5 @@
 {
-  "name": "Stima Jaya",
+  "name": "Drift",
   "version": "1.0",
   "authors": ["Qodri Azkarayan", "Adiel Rum", "Muhammad Zakkiy"],
   "description": "Bot yang terus melakukan drift secara melingkar. Apabila bot mendekati dinding maka ia akan berputar",
