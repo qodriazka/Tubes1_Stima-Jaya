@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uAz8xZgJqg8=",
+  "dgSpecHash": "2H1BkK1J+x0=",
   "success": true,
-  "projectFilePath": "D:\\Projects\\stima\\Tugas_Besar_1\\new\\Tubes1_Stima-Jaya\\src\\Sniper\\Sniper.csproj",
+  "projectFilePath": "D:\\Projects\\stima\\Tugas_Besar_1\\new\\Tubes1_Stima-Jaya\\src\\HitnRun\\HitnRun.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.build.locator\\1.7.8\\microsoft.build.locator.1.7.8.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",

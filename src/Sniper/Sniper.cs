@@ -5,9 +5,9 @@ using Robocode.TankRoyale.BotApi.Events;
 
 public class Sniper : Bot
 {
-    // Indicates whether the bot is in a “peeking” state (scanning while moving along the wall)
+    // Menunjukkan apakah bot dalam keadaan "mengintip" (melakukan scan sambil bergerak sepanjang dinding)
     bool peek;
-    // The distance to move along the wall (set to the maximum arena dimension)
+    // Jarak untuk bergerak sepanjang dinding (diatur ke dimensi arena maksimum)
     double moveAmount;
 
     static void Main()
@@ -15,35 +15,35 @@ public class Sniper : Bot
         new Sniper().Start();
     }
 
-    // Constructor that loads the bot configuration from JSON
+    // Konstruktor yang memuat konfigurasi bot dari JSON
     Sniper() : base(BotInfo.FromFile("Sniper.json")) { }
 
     public override void Run()
     {
-        // Set colors for visual identification
+        // Mengatur warna untuk identifikasi visual
         BodyColor = Color.Black;
         TurretColor = Color.Black;
         RadarColor = Color.Orange;
         BulletColor = Color.Cyan;
         ScanColor = Color.Cyan;
 
-        // Set the move amount to the maximum arena dimension
+        // Mengatur jarak gerakan ke dimensi arena maksimum
         moveAmount = Math.Max(ArenaWidth, ArenaHeight);
         peek = false;
 
-        // Initially, turn to face a wall. Use the remainder of the current direction modulo 90.
+        // Awalnya, berputar untuk menghadap dinding. Gunakan sisa dari arah saat ini modulo 90.
         TurnRight(Direction % 90);
         Forward(moveAmount);
 
-        // Turn the gun to face inward (turn gun right 90°), then turn right to align with the wall
+        // Putar senjata untuk menghadap ke dalam (putar senjata 90° ke kanan), kemudian belok kanan untuk sejajar dengan dinding
         peek = true;
         TurnGunRight(90);
         TurnRight(90);
 
-        // Main loop: continuously patrol the perimeter
+        // Loop utama: terus berpatroli di perimeter
         while (IsRunning)
         {
-            // Peek while moving along the wall so that scanning remains active
+            // Mengintip sambil bergerak sepanjang dinding agar pemindaian tetap aktif
             peek = true;
             Forward(moveAmount);
             peek = false;
@@ -51,45 +51,45 @@ public class Sniper : Bot
         }
     }
 
-    // When another bot is scanned, the bot stops to fire a predicted shot and then resumes movement.
+    // Ketika robot lain dipindai, robot berhenti untuk menembak prediksi tembakan dan kemudian melanjutkan gerakan.
     public override void OnScannedBot(ScannedBotEvent e)
     {
-        // Stop any current movement to allow for an accurate shot.
+        // Hentikan gerakan saat ini untuk memungkinkan tembakan yang akurat.
         Stop();
 
-        // --- Predicted Shot Calculation ---
+        // --- Perhitungan Tembakan Prediksi ---
         double bulletPower = 2; 
-        double bulletSpeed = 20 - 3 * bulletPower; // bullet speed formula
+        double bulletSpeed = 20 - 3 * bulletPower; // rumus kecepatan peluru
 
-        // Calculate the distance to the enemy
+        // Hitung jarak ke musuh
         double distance = DistanceTo(e.X, e.Y);
-        // Estimate the time required for the bullet to reach the target
+        // Perkirakan waktu yang diperlukan peluru untuk mencapai target
         double time = distance / bulletSpeed;
 
-        // Predict the enemy's future position (assuming constant Speed and Direction).
-        // Note: e.Direction is in degrees.
+        // Prediksi posisi musuh di masa depan (dengan asumsi Kecepatan dan Arah konstan).
+        // Catatan: e.Direction adalah dalam derajat.
         double enemyDirectionRad = ToRadians(e.Direction);
         double predictedX = e.X + e.Speed * Math.Cos(enemyDirectionRad) * time;
         double predictedY = e.Y + e.Speed * Math.Sin(enemyDirectionRad) * time;
 
-        // Determine the angle from the bot's current position to the predicted position.
+        // Tentukan sudut dari posisi robot saat ini ke posisi yang diprediksi.
         double angleToPredicted = Math.Atan2(predictedY - Y, predictedX - X) * 180 / Math.PI;
-        // Calculate the minimal angle to turn the gun (based on current GunDirection).
+        // Hitung sudut minimal untuk memutar senjata (berdasarkan GunDirection saat ini).
         double gunTurn = NormalizeAngle(angleToPredicted - GunDirection);
         TurnGunRight(gunTurn);
 
-        // Fire the bullet with the chosen power.
+        // Tembakkan peluru dengan kekuatan yang dipilih.
         Fire(bulletPower);
 
-        // Optionally, if peeking is enabled, force an immediate rescan.
+        // Secara opsional, jika mengintip diaktifkan, paksa pemindaian ulang segera.
         if (peek)
             Rescan();
 
-        // Resume patrolling the wall by reissuing the forward movement.
+        // Lanjutkan berpatroli di dinding dengan melanjutkan gerakan maju
         Resume();
     }
 
-    // When colliding with another bot, simply back up a bit to avoid being stuck.
+    // Ketika bertabrakan dengan robot lain, cukup mundur sedikit untuk menghindari terjebak.
     public override void OnHitBot(HitBotEvent e)
     {
         var bearing = BearingTo(e.X, e.Y);
@@ -99,13 +99,13 @@ public class Sniper : Bot
             Forward(100);
     }
 
-    // Helper method: Converts degrees to radians.
+    // Metode pembantu: Mengkonversi derajat ke radian.
     private double ToRadians(double degrees)
     {
         return degrees * Math.PI / 180.0;
     }
     
-    // Helper method: Normalizes an angle to the range [-180, 180] degrees.
+    // Metode pembantu: Menormalkan sudut ke rentang [-180, 180] derajat.
     private double NormalizeAngle(double angle)
     {
         while (angle > 180)

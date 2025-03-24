@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\stima\\Tugas_Besar_1\\new\\Tubes1_Stima-Jaya\\src\\Drift\\Drift.csproj": {}
+    "D:\\Projects\\stima\\Tugas_Besar_1\\new\\Tubes1_Stima-Jaya\\src\\HitnRun\\HitnRun.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\stima\\Tugas_Besar_1\\new\\Tubes1_Stima-Jaya\\src\\Drift\\Drift.csproj": {
+    "D:\\Projects\\stima\\Tugas_Besar_1\\new\\Tubes1_Stima-Jaya\\src\\HitnRun\\HitnRun.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\stima\\Tugas_Besar_1\\new\\Tubes1_Stima-Jaya\\src\\Drift\\Drift.csproj",
-        "projectName": "Drift",
-        "projectPath": "D:\\Projects\\stima\\Tugas_Besar_1\\new\\Tubes1_Stima-Jaya\\src\\Drift\\Drift.csproj",
+        "projectUniqueName": "D:\\Projects\\stima\\Tugas_Besar_1\\new\\Tubes1_Stima-Jaya\\src\\HitnRun\\HitnRun.csproj",
+        "projectName": "HitnRun",
+        "projectPath": "D:\\Projects\\stima\\Tugas_Besar_1\\new\\Tubes1_Stima-Jaya\\src\\HitnRun\\HitnRun.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\stima\\Tugas_Besar_1\\new\\Tubes1_Stima-Jaya\\src\\Drift\\obj\\",
+        "outputPath": "D:\\Projects\\stima\\Tugas_Besar_1\\new\\Tubes1_Stima-Jaya\\src\\HitnRun\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"

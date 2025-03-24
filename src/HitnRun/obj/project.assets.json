@@ -818,19 +818,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Stima\\tubes1-if2211-starter-pack-1.0\\Tubes1_Stima-Jaya\\src\\Greedy\\Greedy.csproj",
-      "projectName": "Greedy",
-      "projectPath": "C:\\Stima\\tubes1-if2211-starter-pack-1.0\\Tubes1_Stima-Jaya\\src\\Greedy\\Greedy.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Stima\\tubes1-if2211-starter-pack-1.0\\Tubes1_Stima-Jaya\\src\\Greedy\\obj\\",
+      "projectUniqueName": "D:\\Projects\\stima\\Tugas_Besar_1\\new\\Tubes1_Stima-Jaya\\src\\HitnRun\\HitnRun.csproj",
+      "projectName": "HitnRun",
+      "projectPath": "D:\\Projects\\stima\\Tugas_Besar_1\\new\\Tubes1_Stima-Jaya\\src\\HitnRun\\HitnRun.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\stima\\Tugas_Besar_1\\new\\Tubes1_Stima-Jaya\\src\\HitnRun\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"

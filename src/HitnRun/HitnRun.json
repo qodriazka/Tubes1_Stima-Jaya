@@ -1,11 +1,12 @@
 {
-  "name": "Sniper",
+  "name": "HitnRun",
   "version": "1.0",
   "authors": [
     "Adiel Rum",
-    "Muhammad Zakkiy"
+    "Muhammad Zakkiy",
+    "Qodri Azkarayan"
   ],
-  "description": "Memutari perimeter, akan berhenti kemudian menembak dengan presisi.",
+  "description": "Menyerang jika lebih sakit, kabur jika lebih sehat.",
   "homepage": "",
   "countryCodes": [
     "id"
