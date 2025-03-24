@@ -52,16 +52,6 @@ public class AgroRammer : Bot
         }
     }
 
-    private void SmartFire(double distance)
-    {
-        if (distance > 200 || Energy < 15)
-            Fire(1);
-        else if (distance > 50)
-            Fire(2);
-        else
-            Fire(3);
-    }
-
 
     public override void OnHitByBullet(HitByBulletEvent e)
     {
