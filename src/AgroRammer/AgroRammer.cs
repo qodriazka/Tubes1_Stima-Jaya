@@ -26,13 +26,14 @@ public class AgroRammer : Bot
         
         while (IsRunning)
         {
-            // Tell the game that when we take move, we'll also want to turn right... a lot
+            // Memberitahu game bahwa saat bot bergerak, bot juga akan berbelok ke kiri dalam jumlah besar
             SetTurnLeft(10_000);
-            // Limit our speed to 5
+            // Batasi kecepatan menjadi 5
             MaxSpeed = 5;
-            // Start moving (and turning)
+            // Mulau bergerak berputar-putar
             Forward(10_000);
         }
+        
     }
 
     public override void OnScannedBot(ScannedBotEvent e)
@@ -43,12 +44,13 @@ public class AgroRammer : Bot
             double bearingToEnemy = BearingTo(e.X, e.Y); // Hitung arah ke musuh
             SetTurnLeft(bearingToEnemy); // Putar ke arah musuh
             SetForward(100); // Maju untuk menabrak
-            Fire(Math.Min(3 - Math.Abs(bearingFromGun), Energy - .1));
+            SmartFire(DistanceTo(e.X, e.Y));
         }
         else
         {
             var bearingFromGun = GunBearingTo(e.X, e.Y);
             Fire(Math.Min(3 - Math.Abs(bearingFromGun), Energy - .1));
+            //SmartFire(DistanceTo(e.X, e.Y));
         }
     }
 
@@ -75,7 +77,7 @@ public class AgroRammer : Bot
     {
         // Putar 90 derajat dan bergerak menjauhi dinding
         SetTurnRight(90);
-        SetForward(150);
+        SetForward(120);
     }
 
     public override void OnHitBot(HitBotEvent e)

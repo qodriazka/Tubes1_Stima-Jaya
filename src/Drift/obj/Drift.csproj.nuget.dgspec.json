@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Stima\\tubes1-if2211-starter-pack-1.0\\Tubes1_Stima-Jaya\\src\\Drift\\Drift.csproj": {}
+    "D:\\Projects\\stima\\Tugas_Besar_1\\new\\Tubes1_Stima-Jaya\\src\\Drift\\Drift.csproj": {}
   },
   "projects": {
-    "C:\\Stima\\tubes1-if2211-starter-pack-1.0\\Tubes1_Stima-Jaya\\src\\Drift\\Drift.csproj": {
+    "D:\\Projects\\stima\\Tugas_Besar_1\\new\\Tubes1_Stima-Jaya\\src\\Drift\\Drift.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Stima\\tubes1-if2211-starter-pack-1.0\\Tubes1_Stima-Jaya\\src\\Drift\\Drift.csproj",
+        "projectUniqueName": "D:\\Projects\\stima\\Tugas_Besar_1\\new\\Tubes1_Stima-Jaya\\src\\Drift\\Drift.csproj",
         "projectName": "Drift",
-        "projectPath": "C:\\Stima\\tubes1-if2211-starter-pack-1.0\\Tubes1_Stima-Jaya\\src\\Drift\\Drift.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Stima\\tubes1-if2211-starter-pack-1.0\\Tubes1_Stima-Jaya\\src\\Drift\\obj\\",
+        "projectPath": "D:\\Projects\\stima\\Tugas_Besar_1\\new\\Tubes1_Stima-Jaya\\src\\Drift\\Drift.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\stima\\Tugas_Besar_1\\new\\Tubes1_Stima-Jaya\\src\\Drift\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"

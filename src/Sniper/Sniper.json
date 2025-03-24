@@ -2,14 +2,13 @@
   "name": "Sniper",
   "version": "1.0",
   "authors": [
-    "Mathew Nelson",
-    "Flemming N. Larsen"
+    "Adiel Rum",
+    "Muhammad Zakkiy"
   ],
-  "description": "Moves around the outer edge with the gun facing in.",
+  "description": "Memutari perimeter, akan berhenti kemudian menembak dengan presisi.",
   "homepage": "",
   "countryCodes": [
-    "us",
-    "dk"
+    "id"
   ],
   "platform": ".Net 9.0",
   "programmingLang": "C# 10.0"

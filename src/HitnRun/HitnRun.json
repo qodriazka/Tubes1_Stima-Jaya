@@ -1,0 +1,16 @@
+{
+  "name": "HitnRun",
+  "version": "1.0",
+  "authors": [
+    "Adiel Rum",
+    "Muhammad Zakkiy",
+    "Qodri Azkarayan"
+  ],
+  "description": "Menyerang jika lebih sakit, kabur jika lebih sehat.",
+  "homepage": "",
+  "countryCodes": [
+    "id"
+  ],
+  "platform": ".Net 9.0",
+  "programmingLang": "C# 10.0"
+}
