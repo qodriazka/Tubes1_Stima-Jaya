@@ -2,7 +2,7 @@
   "name": "AgroRammer",
   "version": "1.0",
   "authors": ["Adiel", "Zakkiy", "Qodri"],
-  "description": "A bot that drives forward and backward, and fires a bullet",
+  "description": "Bot yang mengincar bot lemah",
   "homepage": "",
   "countryCodes": ["id"],
   "platform": ".Net 9.0",
